@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------
 # This file takes a buffer 0 shapefile and creates buffers (for the 100m specification) at
 # multiples of 100 meters. These files are saved to each buffer sub-folder in foler with name 
-# b* inside CREDIT_DATA/GLEBAS/100M_BUFFERS. Note: can also use the multi buffer function.
+# b* inside CREDIT/GLEBAS/FARMS/100M_BUFFERS. Note: can also use the multi buffer function.
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Create variables to set working directory, buffer dictionary with buffer names and distance in decimal degrees, and universal input file
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/100M_BUFFERS/"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/FARMS/100M_BUFFERS/"
 buffers_100 = {
     "100": 0.0009079,
     "200": 0.0018157,

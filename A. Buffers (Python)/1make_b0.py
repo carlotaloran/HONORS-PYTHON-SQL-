@@ -20,12 +20,12 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Set working directory and file paths
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/"
 csv_file = os.path.join(cd, "glebas_matched_master_nomisreported/glebas_matched_master_nomisreported.csv")
 glebas_fixed = os.path.join(cd, "glebas_matched_master_nomisreported/glebas_matched_master_nomisreported_fixed.shp")
 glebas_dissolved = os.path.join(cd, "glebas_matched_master_nomisreported/glebas_matched_master_nomisreported_dissolved.shp")
-b0_NF = os.path.join(cd, "NF_BUFFERS/b0/b0.shp")  # Final output
-b0_100 = os.path.join(cd, "100M_BUFFERS/b0/b0.shp")  # Final output
+b0_NF = os.path.join(cd, "FARMS/NF_BUFFERS/b0/b0.shp")  # Final output
+b0_100 = os.path.join(cd, "FARMS/100M_BUFFERS/b0/b0.shp")  # Final output
 
 # Delete existing outputs if they exist
 for f in [glebas_fixed, b0_NF, b0_100]:

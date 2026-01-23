@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------
 # This file takes a buffer 0 shapefile and creates buffers (for the near-far specification) at
 # several different distances. These files are saved to each buffer sub-folder with name b*, 
-# inside CREDIT_DATA/GLEBAS/NF_BUFFERS. 
+# inside CREDIT/GLEBAS/FARMS/NF_BUFFERS. 
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Create variables to set working directory, buffer dictionary with buffer names and distance in decimal degrees, and universal input file
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/"
 buffers_nf = {
     "250": 0.00227,
     "500_1": 0.004539,

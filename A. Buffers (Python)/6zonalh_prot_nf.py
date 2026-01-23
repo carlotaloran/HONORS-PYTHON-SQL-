@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------
 # This script computes zonal histograms for buffer polygons at NF distances 0, 250-500, … 
 # using land use rasters. Results are saved as buffer-year .csv files inside buffer folders 
-# b*, found in the clean data folder, under DEFORESTATION_DATA/NF_BUFFERS.
+# b*, found in the clean data folder, under DEFORESTATION/FARMS/NF_BUFFERS.
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Create variables to set working directory, year, and buffer lists
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/CREDIT_DEFOREST_DATA/"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/"
 years = range(2016, 2025)
 buffers = ["250", "500_1", "500_2", "1000_1", "750", "1500", "1000_2", "2000"]
 
@@ -30,8 +30,8 @@ buffers = ["250", "500_1", "500_2", "1000_1", "750", "1500", "1000_2", "2000"]
 
 for b in buffers:
     # Fix geometries
-    input_vector = f"{cd}CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/b{b}/b{b}_ring_prot.shp"
-    fixed_vector = f"{cd}CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/b{b}/b{b}_ring_prot_fixed.shp"
+    input_vector = f"{cd}DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/b{b}/b{b}_ring_prot.shp"
+    fixed_vector = f"{cd}DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/b{b}/b{b}_ring_prot_fixed.shp"
 
     # Delete old fixed shapefile if it exists
     if os.path.exists(fixed_vector):
@@ -48,8 +48,8 @@ for b in buffers:
     
     # Zonal histogram for each year
     for y in years:
-        input_raster = f"{cd}CREDIT_DEFOREST_DATA_RAW/DEFORESTATION_DATA/Mapbiomas/{y}_cover.tif"
-        output_csv = f"{cd}CREDIT_DEFOREST_DATA_CLEAN/DEFORESTATION_DATA/NF_BUFFERS/b{b}/b{b}_cover{y}_prot.csv"
+        input_raster = f"{cd}DATA_RAW/DEFORESTATION/Mapbiomas/{y}_cover.tif"
+        output_csv = f"{cd}DATA_CLEAN/DEFORESTATION/FARMS/NF_BUFFERS/b{b}/b{b}_cover{y}_prot.csv"
 
         # Delete old csv if it exists
         if os.path.exists(output_csv):
@@ -81,8 +81,8 @@ for b in buffers:
 # --------------------------------------------------------------------------------------------
 
 # Fix geometries
-input_vector = f"{cd}CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/b0/b0_prot.shp"
-fixed_vector = f"{cd}CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/b0/b0_prot_fixed.shp"
+input_vector = f"{cd}DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/b0/b0_prot.shp"
+fixed_vector = f"{cd}DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/b0/b0_prot_fixed.shp"
 
 # Delete old fixed shapefile if it exists
 if os.path.exists(fixed_vector):
@@ -100,8 +100,8 @@ processing.run(
     
 # Zonal histogram for each year
 for y in years:
-    input_raster = f"{cd}CREDIT_DEFOREST_DATA_RAW/DEFORESTATION_DATA/Mapbiomas/{y}_cover.tif"
-    output_csv = f"{cd}CREDIT_DEFOREST_DATA_CLEAN/DEFORESTATION_DATA/NF_BUFFERS/b0/b0_cover{y}_prot.csv"
+    input_raster = f"{cd}DATA_RAW/DEFORESTATION/Mapbiomas/{y}_cover.tif"
+    output_csv = f"{cd}DATA_CLEAN/DEFORESTATION/FARMS/NF_BUFFERS/b0/b0_cover{y}_prot.csv"
 
     # Delete old CSV if it exists
     if os.path.exists(output_csv):

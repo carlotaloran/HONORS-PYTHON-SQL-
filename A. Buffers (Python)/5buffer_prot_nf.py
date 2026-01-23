@@ -18,10 +18,8 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Path and buffer definitions
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/" \
-     "CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/"
-protected = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/" \
-            "CREDIT_DEFOREST_DATA/SHAPEFILES/Brazil_UCS/CREDIT_DEFOREST_brazil_UCS_fixed.shp"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/"
+protected = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/SHAPEFILES/Brazil_UCS/CREDIT_DEFOREST_brazil_UCS_fixed.shp"
 buffers = [
     "b0",
     "b250",

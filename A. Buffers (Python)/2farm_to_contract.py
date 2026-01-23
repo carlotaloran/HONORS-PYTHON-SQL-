@@ -3,7 +3,7 @@
 # and calculates its overlap with contract polygons to determine how many times a farm received 
 # credit and retreive its characteristics. It outputs a .csv file with variables farm_id 
 # (which is really the contract ID), FID (which is really the farm ID), and year. Saved as 
-# farm_to_contract in the clean data folder, under CREDIT_DATA/GLEBAS.
+# farm_to_contract in the clean data folder, under CREDIT/GLEBAS/FARMS.
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------
@@ -21,9 +21,9 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Set working directory and file paths
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/"
-farm_file = os.path.join(cd, "NF_BUFFERS/b0/b0.shp")
-farm_fixed = os.path.join(cd, "NF_BUFFERS/b0/b0_fixed.shp")
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/"
+farm_file = os.path.join(cd, "FARMS/NF_BUFFERS/b0/b0.shp")
+farm_fixed = os.path.join(cd, "FARMS/NF_BUFFERS/b0/b0_fixed.shp")
 gleba_file = os.path.join(cd, "glebas_matched_master_nomisreported/glebas_matched_master_nomisreported.shp")
 gleba_fixed = os.path.join(cd, "glebas_matched_master_nomisreported/glebas_matched_master_nomisreported_fixed.shp")
 farm_to_contract = os.path.join(cd, "farm_to_contract.csv")

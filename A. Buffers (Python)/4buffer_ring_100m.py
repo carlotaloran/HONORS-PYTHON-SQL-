@@ -5,8 +5,8 @@
 #   b200_ring  = b200  - b100
 #   b300_ring  = b300  - b200
 #   ...
-# Files are saved as b*_ring to each buffer sub-folder with name b*, inside CREDIT_DATA/
-# GLEBAS/100M_BUFFERS.
+# Files are saved as b*_ring to each buffer sub-folder with name b*, inside CREDIT/
+# GLEBAS/FARMS/100M_BUFFERS, in the clean data folder.
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------
@@ -24,8 +24,7 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Path and buffer pair definition
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/" \
-     "CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/100M_BUFFERS/"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/FARMS/100M_BUFFERS/"
 buffer_pairs = [
     ("b0", "b100"),
     ("b100", "b200"),

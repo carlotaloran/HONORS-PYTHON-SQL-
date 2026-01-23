@@ -3,8 +3,8 @@
 # NF specification. For instance:
 #   b_outer_ring  = b_outer  - b_inner
 #   b_inner_ring  = b_inner  - b0
-# Files are saved as b*_ring to each buffer sub-folder with name b*, inside CREDIT_DATA/
-# GLEBAS/NF_BUFFERS.
+# Files are saved as b*_ring to each buffer sub-folder with name b*, inside CREDIT/
+# GLEBAS/FARMS/NF_BUFFERS, in the clean data folder.
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------
@@ -22,8 +22,7 @@ def delete_shapefile(path):
             os.remove(p)
 
 # Path and buffer pair definition
-cd = "/zfs/students/cloranlo/Downloads/HONS Rural Credit & Deforestation/" \
-     "CREDIT_DEFOREST_DATA/CREDIT_DEFOREST_DATA_CLEAN/CREDIT_DATA/GLEBAS/NF_BUFFERS/"
+cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/FARMS/NF_BUFFERS/"
 buffer_pairs = [
     ("b0", "b250"),
     ("b250", "b500_1"),
