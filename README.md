@@ -65,6 +65,9 @@ These files compute zonal histograms for each buffer–year combination using Ma
             DATA_RAW
                 DEFORESTATION
                     Mapbiomas <-- land use files live here
+            SHAPEFILES
+                Brazil_UCS <-- protected land shapefiles live here
+                
 
 ## CLASSIFY CONTRACTS FOLDER
  This folder contains a script to re-classify credit contracts into cost and investment categories (see Theoretical Framework), edited but heavily written by ChatGPT. It uses a stricter definition for cost credit, discussed in the Appendix. It re-classifies 771590 contracts. The script inputs the contract file 'operacao_gleba_master', cleaned in STATA, and outputs a re-classified file, 'operacao_gleba_master_reclass'. Both are found in folder 'CREDIT/OPERACAO_GLEBA'. Run this script on the local terminal.
