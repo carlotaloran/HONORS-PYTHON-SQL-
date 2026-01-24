@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------
 # This file takes a buffer 0 shapefile and creates buffers (for the near-far specification) at
 # several different distances. These files are saved to each buffer sub-folder with name b*, 
-# inside CREDIT/GLEBAS/FARMS/NF_BUFFERS. 
+# inside CREDIT/GLEBAS/NO_FARMS/NF_BUFFERS. 
 # --------------------------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------------------------

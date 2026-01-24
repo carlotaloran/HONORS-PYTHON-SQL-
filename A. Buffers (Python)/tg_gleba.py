@@ -158,6 +158,7 @@ for b in buffers_nf:
 
 
 
+
 # Path and buffer pair definition
 cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/NO_FARMS/100M_BUFFERS/"
 buffer_pairs = [
@@ -237,6 +238,12 @@ for inner, outer in buffer_pairs:
     # Delete helper files
     delete_shapefile(inner_fixed)
     delete_shapefile(outer_fixed)
+
+
+
+
+
+
 
 
 # Path and buffer pair definition
