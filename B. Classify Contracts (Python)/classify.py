@@ -15,7 +15,7 @@ import unicodedata
 
 # Path definitions
 CSV_PATH = "/Users/carlotaloranlopez/Desktop/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/CONTRACT/operacao_gleba_master.csv"
-OUTPUT_PATH = "/Users/carlotaloranlopez/Desktop/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/CONTRACT/operacao_gleba_master_reclass.csv"
+OUTPUT_PATH = "/Users/carlotaloranlopez/Desktop/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/CONTRACT/classify.csv"
 
 # Columns used for purpose / rules
 CATEGORICAL_COLS = [
