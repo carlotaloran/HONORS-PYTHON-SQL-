@@ -22,7 +22,6 @@ def delete_shapefile(path):
 cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/"
 csv_file = os.path.join(cd, "glebas_matched_master_nooutliers/glebas_matched_master_nooutliers.csv")
 glebas_fixed = os.path.join(cd, "glebas_matched_master_nooutliers/glebas_matched_master_nooutliers_fixed.shp")
-glebas_dissolved = os.path.join(cd, "glebas_matched_master_nooutliers/glebas_matched_master_nooutliters_dissolved.shp")
 b0_NF = os.path.join(cd, "FARMS/NF_BUFFERS/b0/b0.shp")  # Final output
 b0_100 = os.path.join(cd, "FARMS/100M_BUFFERS/b0/b0.shp")  # Final output
 
@@ -383,7 +382,7 @@ for inner, outer in buffer_pairs:
 
 # Path and buffer list definitions
 cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/FARMS/100M_BUFFERS/"
-protected = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/SHAPEFILES/brazil_UCS_fixed.shp"
+protected = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/SHAPEFILES/Brazil_UCS/brazil_UCS_fixed.shp"
 buffers = [
     "b0",
     "b100",
