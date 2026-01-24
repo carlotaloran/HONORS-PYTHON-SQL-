@@ -316,6 +316,10 @@ for inner, outer in buffer_pairs:
     delete_shapefile(outer_fixed)
 
 
+
+
+
+
 # Path and buffer list definitions
 cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/NO_FARMS/100M_BUFFERS/"
 protected = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/SHAPEFILES/Brazil_UCS/brazil_UCS_fixed.shp"
@@ -401,6 +405,8 @@ for b in buffers:
     delete_shapefile(fixed_vector)
 
 
+
+
 # Path and buffer definitions
 cd = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/DATA_CLEAN/CREDIT/GLEBAS/NO_FARMS/NF_BUFFERS/"
 protected = "/zfs/students/cloranlo/Downloads/CREDIT_DEFOREST/DATA/SHAPEFILES/Brazil_UCS/brazil_UCS_fixed.shp"
@@ -472,6 +478,10 @@ for b in buffers:
 
     # Remove temp file
     delete_shapefile(fixed_vector)
+
+
+
+
 
 
 # Create variables to set working directory, year, and buffer lists
